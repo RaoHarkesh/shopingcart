@@ -10,10 +10,10 @@ let initialstate =[
     
     {
        id:1,
-       name:"SAMSUNG Galaxy F22",
-       img:"https://rukminim1.flixcart.com/image/416/416/kqqykcw0/mobile/j/5/7/galaxy-f22-sm-e225flbdins-samsung-original-imag4z99fp4qdfby.jpeg?q=70",
+       name:"Boult Cosmic",
+       img:"https://rukminim1.flixcart.com/image/312/312/l572ufk0/smartwatch/i/4/0/-original-imagfxhngfakhagv.jpeg?q=70",
        qty:1,
-       price:11000
+       price:1999
     },
     {
       id:2,
@@ -22,6 +22,7 @@ let initialstate =[
       qty:1,
       price:92990   
     }
+    
 ]
 
 let reducer = (state=initialstate, action)=>{

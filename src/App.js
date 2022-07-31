@@ -11,6 +11,7 @@ function App() {
   <Navbar/>
   <BrowserRouter>
   <Switch>
+    
     <Route path="/home">
     <Product/>    
     </Route>
@@ -20,7 +21,9 @@ function App() {
   <Route path="/preview">
     <Preview/>
   </Route>
-  
+  <Route path="/">
+      <Home/>
+    </Route>
   </Switch>
   </BrowserRouter>
   </>
