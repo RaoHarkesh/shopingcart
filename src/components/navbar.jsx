@@ -1,8 +1,10 @@
+import { Link, NavLink } from "react-router-dom"
+
 const Navbar = () => {
     return (
      <>
     <div className="navbar">
-        <span className="company">FlipKart</span>
+    <Link to='/home'><span className="company">FlipKart</span></Link>
         <input className="search" type="text" placeholder="search..."/>
         <button>Search</button>
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">

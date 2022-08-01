@@ -1,21 +1,28 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  background-color: #251D3A;
+}
 .navbar{
   display: flex;
   justify-content: space-between;
-  background-color: blue;
+  background-color: #6E85B7;
   height: 65px;
   align-items: center;
 }
+
 .company{
   color: white;
   font-size: 2.5vmax;
   margin-left: 20px;
-  
+  font-family: monospace;
 }
 
 .search{
   width: calc(80% - 200px);
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 80%;
   outline: none;
   padding-left: 15px;
@@ -25,15 +32,16 @@
   width: 7vmax;
   height: 80%;
   border: none;
-  border-radius: 5%;
+  border-radius: 10%;
   outline: none;
   background: white;
   font-size: 1.5vmax;
-  
+  color: lightseagreen;
 }
 
 .navbar button:hover{
-  background: rgb(228, 225, 225);
+  background: lightseagreen;
+  color: white;
 }
 .bi-cart{
   color: white;
@@ -45,29 +53,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  
 }
 .all-items{
   margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
- 
+  background-color: #251D3A; 
   
 }
 .card{
   margin-bottom: 20px;
 }
 .preview-main-div{
-   display: flex;
+  margin-top: 20px;
+  margin-left: 20px; 
+  display: flex;
    justify-content: space-between;
    align-items: center;
    flex-wrap: wrap;
+   
    /* position: relative; */
+   
 }
 
-.preview-left-down-btns{
   
+
+.preview-left-down-btns{
+  margin-top: 20px;
   /* width: 100%;
   height: 10%;  */
   display: flex;
@@ -85,5 +99,9 @@
 
 .product-price{
   font-weight: bolder;
-
+  color: white;
+}
+.product-name{
+  color: white;
+  font-size: 1.5rem;
 }

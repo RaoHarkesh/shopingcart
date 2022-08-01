@@ -8,8 +8,9 @@ import Preview from './components/preview';
 function App() {
   return (
   <>
-  <Navbar/>
+  
   <BrowserRouter>
+  <Navbar/>
   <Switch>
     
     <Route path="/home">
@@ -18,7 +19,7 @@ function App() {
   <Route path="/cart">
   <Cart/>
   </Route>
-  <Route path="/preview">
+  <Route path="/preview/:id">
     <Preview/>
   </Route>
   <Route path="/">
