@@ -1,51 +1,59 @@
 *{
   font-family: 'Times New Roman', Times, serif;
 }
-body{
-  background-color: #251D3A;
-}
+
 .navbar{
   display: flex;
   justify-content: space-between;
-  background-color: #6E85B7;
+  background-color: black;
   height: 65px;
   align-items: center;
 }
 
 .company{
   color: white;
-  font-size: 2.5vmax;
+  font-size: 1.5vmax;
   margin-left: 20px;
-  font-family: monospace;
+  font-family: sans-serif;
+  letter-spacing: 4px;
 }
 
 .search{
   width: calc(80% - 200px);
-  border: none;
-  border-radius: 10px;
-  height: 80%;
+  border: 0.01px solid white;
+  border-radius: 20px/ 20px;
+  height: 60%;
   outline: none;
   padding-left: 15px;
+  background-color: black;
+  color: white;
+  
 }
+.search:hover{
+  background-color: white;
+  color: black
+}
+
 .navbar button{
   text-align: center;
-  width: 7vmax;
-  height: 80%;
-  border: none;
-  border-radius: 10%;
+  width: 55px;
+  height: 60%;
+  border: 0.1px solid white;
+  border-radius: 10px;
   outline: none;
-  background: white;
-  font-size: 1.5vmax;
-  color: lightseagreen;
+  background: black;
+  
+  color: lightgreen;
 }
 
 .navbar button:hover{
-  background: lightseagreen;
-  color: white;
+  background: lightgreen;
+  color: black;
+  border: none
 }
 .bi-cart{
   color: white;
-  
+  cursor: pointer;
   
   margin-right: 20px;
 }
@@ -60,11 +68,13 @@ body{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: #251D3A; 
+   
   
 }
 .card{
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .preview-main-div{
   margin-top: 20px;
@@ -99,9 +109,22 @@ body{
 
 .product-price{
   font-weight: bolder;
-  color: white;
+  color: black;
 }
 .product-name{
-  color: white;
+  color: black;
   font-size: 1.5rem;
+}
+.card-img-top{
+  max-height: 200px;
+}
+
+@media screen and (max-width: 480px) {
+  .search{
+    border-radius: 10px;   
+  }
+  .preview-right{
+    top: 80vh;
+    left: 40vw;
+  }
 }

@@ -25,7 +25,7 @@ const Cart = ()=>{
             total+=amount
             return (
                 
-                <tr>
+                <tr key={ele.id+1}>
                 <th scope="row">{ele.id+1}</th>
                 <td>{ele.name}</td>
                 <td>{ele.price}</td>

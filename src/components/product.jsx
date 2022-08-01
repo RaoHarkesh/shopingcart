@@ -1,6 +1,10 @@
 import { useHistory } from 'react-router'
 import { useSelector } from 'react-redux'
+import {useDispatch} from 'react-redux'
+import { addCreator } from '../redux/action'
+
 const Product = () => {
+    let dispatch = useDispatch()
     let history = useHistory();
     let statearr = useSelector((state) => state)
     return (
@@ -8,11 +12,11 @@ const Product = () => {
             <div className="all-items">
                 {statearr.map((ele, idx) => {
                     return (
-                        <div onClick={()=>{history.push(`/preview/${ele.id}`)}} key={idx} className="card" style={{ "width": "15rem" }}>
-                            <img src={ele.img} class="card-img-top" alt="..." />
+                        <div  key={idx} className="card" style={{ "width": "15rem" }}>
+                            <img onClick={()=>{history.push(`/preview/${ele.id}`)}} src={ele.img} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{ele.name}</h5>
-                                <a href="#" className="btn btn-primary">Buy Now</a>
+                                <button onClick={()=>{dispatch(addCreator(ele.id))}} href="#" className="btn btn-primary">Add TO Cart</button>
                             </div>
                         </div>
                     )
