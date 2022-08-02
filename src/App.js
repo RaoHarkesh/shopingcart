@@ -1,4 +1,5 @@
 import Navbar from './components/navbar';
+
 import './App.css';
 import Home from './components/home';
 import Cart from './components/cart';
@@ -11,10 +12,11 @@ function App() {
   
   <BrowserRouter>
   <Navbar/>
+  
   <Switch>
     
     <Route path="/home">
-    <Product/>    
+    <Home/>    
     </Route>
   <Route path="/cart">
   <Cart/>
@@ -23,6 +25,7 @@ function App() {
     <Preview/>
   </Route>
   <Route path="/">
+      
       <Home/>
     </Route>
   </Switch>

@@ -7,12 +7,15 @@
   justify-content: space-between;
   background-color: black;
   height: 65px;
+  width: 100%;
   align-items: center;
+  
+  
 }
 
 .company{
   color: white;
-  font-size: 1.5vmax;
+  font-size: 2vmax;
   margin-left: 20px;
   font-family: sans-serif;
   letter-spacing: 4px;
@@ -20,8 +23,8 @@
 
 .search{
   width: calc(80% - 200px);
-  border: 0.01px solid white;
-  border-radius: 20px/ 20px;
+  /* border: 0.01px solid white; */
+  border-radius: 5px;
   height: 60%;
   outline: none;
   padding-left: 15px;
@@ -38,24 +41,29 @@
   text-align: center;
   width: 55px;
   height: 60%;
-  border: 0.1px solid white;
-  border-radius: 10px;
-  outline: none;
-  background: black;
   
-  color: lightgreen;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  color: black;
+  border: none;
+  transition: 0.3s;
 }
 
 .navbar button:hover{
-  background: lightgreen;
-  color: black;
-  border: none
-}
+   color: white;
+   background-color: blue;
+   
+  }
+  
 .bi-cart{
   color: white;
   cursor: pointer;
   
   margin-right: 20px;
+}
+.bi-cart:hover{
+  color: red;
 }
 .card-body{
   display: flex;
@@ -80,14 +88,26 @@
   margin-top: 20px;
   margin-left: 20px; 
   display: flex;
-   justify-content: space-between;
+  
    align-items: center;
-   flex-wrap: wrap;
+
    
    /* position: relative; */
    
 }
+.title-cont{
+  height: 40px;
+  width: 100%;
+  
+  
+}
+.title-cont h5{
+  text-overflow: ellipsis;
 
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
   
 
 .preview-left-down-btns{
@@ -101,10 +121,15 @@
 .preview-right{
    display: flex;
    flex-direction: column;
-    align-items: center; 
-   position: absolute;
-   left: 50vw;
-   top: 30vh; 
+    align-items: center ; 
+   border: 0.1px solid black;
+   border-radius: 5px;
+   padding-left: 5px;
+   box-shadow: 3px 3px rgb(170, 168, 168);
+   margin-left: 100px;
+   width: 50%;
+   max-height: 250px;
+   margin-right: 10px;
  }
 
 .product-price{
@@ -115,8 +140,41 @@
   color: black;
   font-size: 1.5rem;
 }
+.poffers{
+ 
+  width: 100%;
+  text-overflow: ellipsis;
+  
+  overflow: hidden;
+  
+}
 .card-img-top{
+  min-height: 200px;
   max-height: 200px;
+}
+.banner-img{
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+  border-bottom: 0.01px solid black;
+  border-right: 0px;
+  border-top: 0.1px solid black;
+  border-left: 0px;
+  margin-left: 0px;
+  border-radius: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card-img-top-ban{
+  margin-top: 5px;
+}
+.ban-title{
+  font-family: monospace;
+  height: 22px;
+  text-overflow: ellipsis;
+  
+  overflow: hidden;
+
 }
 
 @media screen and (max-width: 480px) {
@@ -127,4 +185,25 @@
     top: 80vh;
     left: 40vw;
   }
+}
+
+@media screen and (min-width: 540px){
+  .card-img-top-ban{
+    margin-top: 5px;
+    width: 50%;
+    
+    
+  } 
+}
+@media screen and (max-width:540px) {
+ .preview-main-div{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;  
+ }
+ .preview-right{
+  margin-top: 50px;
+  width: 100%;
+  margin-left: 0px;
+ } 
 }
